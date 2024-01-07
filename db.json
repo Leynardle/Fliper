@@ -6,6 +6,13 @@
             "sirname": "Romanenko",
             "Photo_url": "images/user_1_photo.png",
             "balance": 9999999999999999999999999999999999999999999999999999999
+        },
+        {
+            "id": 2,
+            "name": "Nikita",
+            "sirname": "Okhrimenko",
+            "Photo_url": "images/user_2.JFIF",
+            "balance": 1000
         }
     ]
 }
