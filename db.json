@@ -13,14 +13,39 @@
             "sirname": "Okhrimenko",
             "Photo_url": "images/user_2.JFIF",
             "balance": 1000
-        }
-        ,
+        },
         {
             "id": 3,
             "name": "Ruslan",
             "sirname": "Kramskoi",
             "Photo_url": "images/Ruslan.png",
             "balance": 15000
+        }
+    ],
+    "products":[
+        {
+            "id":"1",
+            "mame":"Nike purse",
+            "description":"This bag is made of high quality fabric, suitable for both boys and girls.", 
+            "price": 15,
+            "author_id": 1,
+            "photo_url":"images/product_1.jpg",
+        },
+        {
+            "id":"",
+            "mame":"",
+            "description":"", 
+            "price":,
+            "author_id":,
+            "photo_url":"",
+        },
+        {
+            "id":"",
+            "mame":"",
+            "description":"", 
+            "price":,
+            "author_id":,
+            "photo_url":"",
         }
     ]
 }
