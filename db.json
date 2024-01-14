@@ -25,7 +25,7 @@
     "products":[
         {
             "id":"1",
-            "mame":"Nike purse",
+            "name":"Nike purse",
             "description":"This bag is made of high quality fabric, suitable for both boys and girls.", 
             "price": 15,
             "author_id": 1,
@@ -33,15 +33,15 @@
         },
         {
             "id":"",
-            "mame":"",
-            "description":"", 
-            "price":"",
-            "author_id":"",
-            "photo_url":""
+            "name":"ESP32",
+            "description":"ESP32", 
+            "price":"100",
+            "author_id":"2",
+            "photo_url":"images/esp32.jpg"
         },
         {
             "id":"",
-            "mame":"",
+            "name":"",
             "description":"", 
             "price":"",
             "author_id":"",
