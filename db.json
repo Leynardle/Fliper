@@ -24,7 +24,7 @@
     ],
     "products":[
         {
-            "id":"1",
+            "id":1,
             "name":"Nike purse",
             "description":"This bag is made of high quality fabric, suitable for both boys and girls.", 
             "price": 15,
@@ -32,20 +32,20 @@
             "photo_url":"images/product_1.jpg"
         },
         {
-            "id":"",
+            "id": 2,
             "name":"ESP32",
             "description":"ESP32", 
-            "price":"100",
-            "author_id":"2",
+            "price": 100,
+            "author_id": 2,
             "photo_url":"images/esp32.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "description":"", 
-            "price":"",
-            "author_id":"",
-            "photo_url":""
+            "id": 3,
+            "name":"ipega",
+            "description":"joystick with is solved from ps5 and Xbox", 
+            "price": 10,
+            "author_id": 3,
+            "photo_url":"images/user_2_photo.jpg"
         }
     ]
 }
