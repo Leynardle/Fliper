@@ -89,3 +89,37 @@ button {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+#profile {
+    background-color: tomato;
+    padding: 1rem 3rem;
+    flex-basis: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.profile-img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 0 #000;
+    width: 20rem;
+    margin: 2rem 0;
+    background-color: #ffffff;
+}
+
+.product-link{
+    font-size: 2rem;
+    color: #000000;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.product-link:hover{
+    transform: scale(1.2);
+}
