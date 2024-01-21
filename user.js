@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
 let profile = document.getElementById('profile')
-let url = 'https://my-json-server.typicode.com/Leynardle/Fliper'
+let url = 'https://my-json-server.typicode.com/Leynardle/Fliper';
 
 let userRequest = new XMLHttpRequest();
 
