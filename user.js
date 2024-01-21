@@ -13,7 +13,7 @@ userRequest.onload = function () {
     profile.innerHTML = `
     <h1>${user.name}</h1>
     <h2>${user.sirname}</h2>
-    <img class="profile-img" src="${user.photo_url}">
+    <img class="profile-img" src="${user.Photo_url}">
     <p>Balance: ${user.balance}$</p>
     `
 }
