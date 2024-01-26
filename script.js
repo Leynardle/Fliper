@@ -22,8 +22,8 @@ xhr.onload = function () {
         `;
         productsGrid.append(pElem);
     });
-    function openCart() {
-        cartProd.classList.toggle('hide');
+function openCart() {
+    cartProd.classList.toggle('hide');
     }
 }
 xhr.send();
