@@ -143,3 +143,51 @@ button {
 .product-link:hover{
     transform: scale(1.2);
 }
+
+#cart-products::before{
+    content: '';
+    border: transparent solid 16px;
+    border-bottom: solid #000 16px;
+    position: relative;
+    top: -2.7rem;
+    left: 15.8rem;
+    z-index: -1;
+}
+
+#cart-products{
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    top: 59px;
+    right: 0rem;
+    left: -16rem;
+    position: absolute;
+    padding: 10px;
+    text-align: left;
+}
+
+#cart{
+    position: relative;
+}
+
+#cart-button img{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+#cart-button:hover{
+    background-color: rgb(170,170,255);
+}
+
+#cart-button{
+    background: none;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
