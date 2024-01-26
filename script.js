@@ -22,9 +22,11 @@ xhr.onload = function () {
         `;
         productsGrid.append(pElem);
     });
+    
+}
+xhr.send();
+
 function openCart() {
     cartProd.classList.toggle('hide');
     }
-}
-xhr.send();
 
