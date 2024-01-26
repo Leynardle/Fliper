@@ -36,7 +36,7 @@
             "name":"ESP32",
             "description":"ESP32", 
             "price": 100,
-            "author_id": 2,
+            "author_id": 3,
             "photo_url":"images/esp32.jpg"
         },
         {
@@ -44,7 +44,7 @@
             "name":"ipega",
             "description":"joystick with is solved from ps5 and Xbox", 
             "price": 10,
-            "author_id": 3,
+            "author_id": 2,
             "photo_url":"images/user_2_photo.jpg"
         }
     ]

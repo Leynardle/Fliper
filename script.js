@@ -22,9 +22,10 @@ xhr.onload = function () {
         `;
         productsGrid.append(pElem);
     });
-    function openCart() {
-        cartProd.classList.toggle('hide');
+    
     }
-}
+
 xhr.send();
 
+function openCart() {
+        cartProd.classList.toggle('hide');}
