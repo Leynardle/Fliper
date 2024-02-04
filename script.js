@@ -62,7 +62,7 @@ function drawCartProducts() {
     if(cartProd.length === 0) return cartProd.innerHTML = 'Cart is empty';
     cartProd.innerHTML = null;
     let sum = 0;
-    cartProd.forEach(function(p){
+    cart.forEach(function(p){
         cartProd.innerHTML += `
         <p><img src="${p.photo_url}"> ${p.name} |${p.price}</p>
         <hr>
