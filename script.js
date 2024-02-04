@@ -57,3 +57,30 @@ function addProductToCart(id) {
         document.getElementById('cart-button').classList.remove('active');
     }, 500);
 }
+
+function drawCartProducts() {
+    if(cartProd.length === 0) return cartProd.innerHTML = 'Cart is empty';
+    cartProd.innerHTML = null;
+    let sum = 0;
+    cartProd.forEach(function(p){
+        cartProd.innerHTML += `
+        <p><img src="${p.photo_url}"> ${p.name} |${p.price}</p>
+        <hr>
+        `;
+        sum += p.price;
+    });
+    cartProd.innerHTML +=`
+    <p>Total Price: ${sunm}$</p>
+    <button onclick="buyAll()">Buy All</button>
+    `;
+}
+
+function buyAll() {
+    cart = [];
+    cartProd.innerHTML = 'Money was withdrawn from your credit cart';
+    localStorage.setitem("cart", '[]')
+}
+
+function openCart() {
+    cartProd.classList.toggle('hide');
+}
