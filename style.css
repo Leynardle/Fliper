@@ -144,7 +144,7 @@ button {
     transform: scale(1.2);
 }
 
-#cart-button.activate{
+#cart-button.active{
     background-color: rgb(170, 255, 170);
 }
 
