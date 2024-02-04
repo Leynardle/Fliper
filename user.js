@@ -23,7 +23,7 @@ userRequest.send();
 
 let productsRequest = new XMLHttpRequest();
 
-productsRequest.open('GET' `${url}/products?author_id=${id}`);
+productsRequest.open('GET', `${url}/products?author_id=${id}`);
 productsRequest.responseType = 'json'
 productsRequest.onload = function () {
     let products = productsRequest.response;
