@@ -166,6 +166,11 @@ button {
     text-align: left;
 }
 
+#cart-products p img{
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
 #cart{
     position: relative;
 }
