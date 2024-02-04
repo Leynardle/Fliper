@@ -144,6 +144,10 @@ button {
     transform: scale(1.2);
 }
 
+#cart-button.activate{
+    background-color: rgb(170, 255, 170);
+}
+
 #cart-products::before{
     content: '';
     border: transparent solid 16px;
