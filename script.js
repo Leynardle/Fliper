@@ -70,7 +70,7 @@ function drawCartProducts() {
         sum += p.price;
     });
     cartProd.innerHTML +=`
-    <p>Total Price: ${sunm}$</p>
+    <p>Total Price: ${sum}$</p>
     <button onclick="buyAll()">Buy All</button>
     `;
 }
