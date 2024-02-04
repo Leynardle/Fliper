@@ -29,3 +29,4 @@ function openCart() {
     cartProd.classList.toggle('hide');
     }
 
+let cartProd = document.getElementById('cart-products')
