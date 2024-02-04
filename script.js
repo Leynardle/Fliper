@@ -18,7 +18,7 @@ xhr.onload = function () {
         <p class='product-price'><b>Price: </b>${p.price}$</p>
         <p class='product-description'><b>Description:</b>${p.description}</p>
         <a href='userProfile.html?id=${p.author_id}'>Seller profile</a>
-        <button>Buy</button>
+        <button onclick="addProductToCart(${p.id})">Buy</button>
         `;
         productsGrid.append(pElem);
     });
