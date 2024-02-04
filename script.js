@@ -78,7 +78,7 @@ function drawCartProducts() {
 function buyAll() {
     cart = [];
     cartProd.innerHTML = 'Money was withdrawn from your credit cart';
-    localStorage.setitem("cart", '[]')
+    localStorage.setItem("cart", '[]')
 }
 
 function openCart() {
