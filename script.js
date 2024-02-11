@@ -1,9 +1,14 @@
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let xhr = new XMLHttpRequest();
-let url = 'https://my-json-server.typicode.com/Leynardle/Fliper';
+let url = 'https://market-6d33.restdb.io/rest';
 
 xhr.open('Get', url + '/products');
+
+xhr.setRequestHeader("content-type", "application/json");
+xhr.setRequestHeader("xapikey", "61b3ca4f72a03f5dae8222ad");
+xhr.setRequestHeader("cache-control", "no-cache");
+
 xhr.responseType = 'json'
 xhr.onload = function () {
     productsArray = xhr.response;
@@ -18,7 +23,7 @@ xhr.onload = function () {
         <p class='product-price'><b>Price: </b>${p.price}$</p>
         <p class='product-description'><b>Description:</b>${p.description}</p>
         <a href='userProfile.html?id=${p.author_id}'>Seller profile</a>
-        <button onclick="addProductToCart(${p.id})">Buy</button>
+        <button onclick="addProductToCart('${p.id}')">Buy</button>
         `;
         productsGrid.append(pElem);
     });
@@ -46,7 +51,7 @@ if (localStorage.getItem('cart')) {
 
 function addProductToCart(id) {
     let product = productsArray.find(function (p) {
-        return p.id == id;
+        return p._id == id;
     })
     cart.push(product);
     drawCartProducts();
