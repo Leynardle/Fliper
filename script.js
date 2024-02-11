@@ -1,12 +1,12 @@
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let xhr = new XMLHttpRequest();
-let url = 'https://market-6d33.restdb.io/rest';
+let url = 'https://fliper-dc51.restdb.io/rest/product';
 
 xhr.open('Get', url + '/products');
 
 xhr.setRequestHeader("content-type", "application/json");
-xhr.setRequestHeader("xapikey", "61b3ca4f72a03f5dae8222ad");
+xhr.setRequestHeader("xapikey", "65c88987c8b82559110da2cb");
 xhr.setRequestHeader("cache-control", "no-cache");
 
 xhr.responseType = 'json'
