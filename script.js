@@ -42,7 +42,7 @@ xhr.send();
 
 let cartProd = document.getElementById('cart-products');
 
-let cart = []
+let cart = [];
 if (localStorage.getItem('cart')) {
     cart = JSON.parse(localStorage.getItem('cart'));
     drawCartProducts();
