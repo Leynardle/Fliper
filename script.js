@@ -30,13 +30,13 @@ xhr.onload = function () {
 }
 xhr.send();
 
-function addProductToCart(id) {
-    xhr.open('GET', `${url}/products/${id}`);
-    xhr.responseType = 'json'
-    xhr.onload = function () {
+// function addProductToCart(id) {
+//     xhr.open('GET', `${url}/products/${id}`);
+//     xhr.responseType = 'json'
+//     xhr.onload = function () {
         
-    }
-}
+//     }
+// }
 
 
 
