@@ -3,7 +3,7 @@ let productsArray = [];
 let xhr = new XMLHttpRequest();
 let url = 'https://fliper-dc51.restdb.io/rest/product';
 
-xhr.open('Get', url + '/products');
+xhr.open('GET', url + '/products');
 
 xhr.setRequestHeader("content-type", "application/json");
 xhr.setRequestHeader("xapikey", "65c88987c8b82559110da2cb");
