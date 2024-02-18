@@ -1,9 +1,9 @@
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let xhr = new XMLHttpRequest();
-let url = 'https://fliper-dc51.restdb.io/rest/product';
+let url = 'https://fliper-dc51.restdb.io/rest';
 
-xhr.open('GET', url + '/products');
+xhr.open('GET', url + '/product');
 
 xhr.setRequestHeader("content-type", "application/json");
 xhr.setRequestHeader("xapikey", "65c88987c8b82559110da2cb");
