@@ -89,3 +89,27 @@ function buyAll() {
 function openCart() {
     cartProd.classList.toggle('hide');
 }
+
+document.getElementById('order-form').addEventListener('submit', function (e) {
+    e.preventDefault();//
+    let data = JSON.stringify({
+        "name": e.target['mame'].value,
+        "address": e.target['address'].value,
+        "phone": e.target['phone'].value,
+        "post_number": e.target['post_number'].value,
+        "status": "New"
+        "products": localStorage.getItem('cart')
+    });
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url + "/order");
+    xhr.setRequestHeader("content-type", "application/json");
+    xhr.setRequestHeader("x-apikey", "65c88987c8b82559110da2cb");
+    xhr.setRequestHeader("cache-cotrol", "no-cache");
+    xhr.send(data);
+
+    modal.style.display = "none";
+    cart = [];
+    cartProd.innerHTML = 'tell your money bye bye';
+    localStorage.setItem("cart", '[]');
+})
