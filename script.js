@@ -97,7 +97,7 @@ document.getElementById('order-form').addEventListener('submit', function (e) {
         "address": e.target['address'].value,
         "phone": e.target['phone'].value,
         "post_number": e.target['post_number'].value,
-        "status": "New"
+        "status": "New",
         "products": localStorage.getItem('cart')
     });
 
