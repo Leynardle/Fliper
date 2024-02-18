@@ -6,7 +6,7 @@ let url = 'https://fliper-dc51.restdb.io/rest';
 xhr.open('GET', url + '/product');
 
 xhr.setRequestHeader("content-type", "application/json");
-xhr.setRequestHeader("xapikey", "65c88987c8b82559110da2cb");
+xhr.setRequestHeader("x-apikey", "65c88987c8b82559110da2cb");
 xhr.setRequestHeader("cache-control", "no-cache");
 
 xhr.responseType = 'json'
