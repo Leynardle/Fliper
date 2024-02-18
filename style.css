@@ -175,23 +175,6 @@ button {
     max-height: 2rem;
 }
 
-#cart{
-    position: relative;
-}
-
-#cart-button{
-    background: none;
-    border: none;
-    border-radius: 50%;
-    padding: 5px;
-    border: 1px solid black;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
-}
-
 .hide {
     display: none;
 }
