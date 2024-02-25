@@ -116,7 +116,7 @@ function openCart() {
 document.getElementById('order-form').addEventListener('submit', function(e) {
     e.preventDefault();//
     let data = JSON.stringify({
-        "name": e.target['mame'].value,
+        "name": e.target['name'].value,
         "address": e.target['address'].value,
         "phone": e.target['phone'].value,
         "post_number": e.target['post_number'].value,
