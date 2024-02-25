@@ -12,7 +12,7 @@ xhr.setRequestHeader("cache-control", "no-cache");
 xhr.responseType = 'json'
 xhr.onload = function () {
     productsArray = xhr.response;
-    productsArray.innerHTML = null;
+    productsGrid.innerHTML = null;
     productsArray.forEach(p => {
         productsArray.push(p);
         let pElem = document.createElement('div');
