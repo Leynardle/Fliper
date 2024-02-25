@@ -69,7 +69,7 @@ function drawCartProducts() {
     let sum = 0;
     cart.forEach(function(p){
         cartProd.innerHTML += `
-        <p><img src="${p.photo_url}"> ${p.name} |${p.price}</p>
+        <p><img src="${p.photo_url}"> ${p.name} |${p.price}$</p>
         <hr>
         `;
         sum += p.price;
