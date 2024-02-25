@@ -11,7 +11,7 @@ xhr.setRequestHeader("cache-control", "no-cache");
 
 xhr.responseType = 'json'
 xhr.onload = function () {
-    productsArray = xhr.response;
+    productsArray = xhr.response
     productsGrid.innerHTML = null;
     productsArray.forEach(p => {
         productsArray.push(p);
@@ -71,17 +71,49 @@ function drawCartProducts() {
     `;
 }
 
+let orderBlock = document.getElementById('order-block');
+
+// get the modal
+let modal = document.getElementById('myModal');
+
+
+// get the span
+let span = document.getElementsByClassName('close')[0];
+
+// when the user clicks
+span.onclick = function () {
+    modal.style.display = 'none';
+}
+
+// when yhe user 
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = 'none'
+    }
+}
+
 function buyAll() {
-    cart = [];
-    cartProd.innerHTML = 'Money was withdrawn from your credit cart';
-    localStorage.setItem("cart", '[]')
+    modal.style.display = 'block'
+    let sum = 0;
+    orderBlock.innerHTML = null;
+
+    cart.forEach(function (p) {
+        orderBlock.innerHTML += `
+            <div class="item">
+                <img width="100px" src="${p.photo_url}">
+                <h2>${p.name} | ${p.price}$</h2>
+            </div>
+        `;
+        sum += +p.price;
+    });
+    document.getElementById('price').innerHTML = sum + '$';
 }
 
 function openCart() {
     cartProd.classList.toggle('hide');
 }
 
-document.getElementById('order-form').addEventListener('submit', function (e) {
+document.getElementById('order-form').addEventListener('submit', function(e) {
     e.preventDefault();//
     let data = JSON.stringify({
         "name": e.target['mame'].value,
