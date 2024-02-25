@@ -64,7 +64,7 @@ function addProductToCart(id) {
 }
 
 function drawCartProducts() {
-    if(cartProd.length === 0) return cartProd.innerHTML = 'Cart is empty';
+    if(cart.length === 0) return cartProd.innerHTML = 'Cart is empty';
     cartProd.innerHTML = null;
     let sum = 0;
     cart.forEach(function(p){
