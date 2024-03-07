@@ -12,11 +12,15 @@ productForm.addEventListener('submit', function (event) {
     let xhr = new XMLHttpRequest();
     xhr.withCredentials = false;
 
-    xhr.addEventListener("readystatechange", function () {
-    if (this.readyState === 4) {
-            console.log (this.responseText);
+    xhr.onload = function () {
+        if (xhr.status === 201) {
+            event.target.reset();
+            alert('Product added successfully');
         }
-    });
+        else{
+            alert('Server error. Try again later')
+        }
+    };
 
     xhr.open("POST", "https://fliper-dc51.restdb.io/rest/product");
 
