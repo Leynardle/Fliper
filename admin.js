@@ -30,7 +30,7 @@ productForm.addEventListener('submit', function (event) {
 
 let xhr = new XMLHttpRequest();
 
-xhr.open("GET", "https://market-6d33.restdb.io/rest/orders"); xhr.responseType = 'json'
+xhr.open("GET", "https://fliper-dc51.restdb.io/rest/product"); xhr.responseType = 'json'
 
 xhr.setRequestHeader("content-type", "application/json"); xhr.setRequestHeader("x-apikey", "61b3ca4f72a03f5dae8222ad"); xhr.setRequestHeader("cache-control", "no-cache");
 
