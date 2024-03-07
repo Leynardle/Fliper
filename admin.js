@@ -31,7 +31,7 @@ productForm.addEventListener('submit', function (event) {
     xhr.send (data);
 
 })
-let orders = document.getElementById("admin_page_orders")
+let orders = document.getElementById("admin_page_orders");
 
 let xhr = new XMLHttpRequest();
 xhr.open("GET", "https://fliper-dc51.restdb.io/rest/product"); xhr.responseType = 'json'
