@@ -15,24 +15,30 @@
             <a class="products-link" href="index.html">Products</a>
         </nav>
     </header>
-    <div class="add_product">
-        <form id="add_product_form">
-            <div class="form-group">
-                <label>Name: </label><input class="form-control" name="name" typy="text" required>
+    <main>
+        <div class="admin_grid">
+            <div class="add_product">
+                <form id="add_product_form">
+                    <div class="form-group">
+                        <label>Name: </label><input class="form-control" name="name" typy="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Description: </label><textarea class="form-control" name="description" type="text"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Price: </label><input class="form-control" name="price" data-type="money" typy="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Photo url: </label><input class="form-control" name="photo_url" typy="text">
+                    </div>
+                    <input type="submit">
+                </form>
             </div>
-            <div class="form-group">
-                <label>Description: </label><textarea class="form-control" name="description" type="text"></textarea>
+            <div id="admin_page_orders">
+
             </div>
-            <div class="form-group">
-                <label>Price: </label><input class="form-control" name="price" data-type="money" typy="text" required>
-            </div>
-            <div class="form-group">
-                <label>Photo url: </label><input class="form-control" name="photo_url" typy="text">
-            </div>
-            <input type="submit">
-        </form>
-    </div>
+        </div>
+    </main>
 </body>
 <script src="admin.js" defer></script>
-
 </html>
