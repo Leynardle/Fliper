@@ -95,9 +95,9 @@ alert('Server error. Try again later');
             }
         }
 
-xhr.open("PUT", "https://market-6d33.restdb.io/rest/orders/"+id);
+xhr.open("PUT", "https://fliper-dc51.restdb.io/rest/product"+id);
 xhr.setRequestHeader("content-type", "application/json"); 
-xhr.setRequestHeader("x-apikey", "61b3ca4f72a03f5dae8222ad"); 
+xhr.setRequestHeader("x-apikey", "65c88987c8b82559110da2cb"); 
 xhr.setRequestHeader("cache-control", "no-cache");
 
 xhr.send(data);
