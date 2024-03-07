@@ -32,7 +32,9 @@ let xhr = new XMLHttpRequest();
 
 xhr.open("GET", "https://fliper-dc51.restdb.io/rest/product"); xhr.responseType = 'json'
 
-xhr.setRequestHeader("content-type", "application/json"); xhr.setRequestHeader("x-apikey", "61b3ca4f72a03f5dae8222ad"); xhr.setRequestHeader("cache-control", "no-cache");
+xhr.setRequestHeader("content-type", "application/json"); 
+xhr.setRequestHeader("x-apikey", "65c88987c8b82559110da2cb"); 
+xhr.setRequestHeader("cache-control", "no-cache");
 
 xhr.onload = function() {
 
