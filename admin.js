@@ -34,7 +34,7 @@ productForm.addEventListener('submit', function (event) {
 let orders = document.getElementById("admin_page_orders");
 
 let xhr = new XMLHttpRequest();
-xhr.open("GET", "https://fliper-dc51.restdb.io/rest/product");
+xhr.open("GET", "https://fliper-dc51.restdb.io/rest/order");
 xhr.responseType = 'json'
 xhr.setRequestHeader("content-type", "application/json"); 
 xhr.setRequestHeader("x-apikey", "65c88987c8b82559110da2cb"); 
