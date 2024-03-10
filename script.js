@@ -128,7 +128,6 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
     xhr.open("POST", url + "/order");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", "65c88987c8b82559110da2cb");
-    xhr.setRequestHeader("cache-cotrol", "no-cache");
     xhr.send(data);
 
     modal.style.display = "none";
